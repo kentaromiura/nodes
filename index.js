@@ -1,7 +1,7 @@
 "use strict";
 
-var factory = require("./lib/factory");
-var build = require("./lib/build");
+const factory = require("./lib/factory");
+const build = require("./lib/build");
 
 require("./lib/finder");
 
