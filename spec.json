@@ -907,6 +907,94 @@
         "accepts": [ "Literal" ]
       }
     }
+  },
+
+  "StringLiteral": {
+    "inherits": ["Literal"]
+  },
+
+  "NumericLiteral": {
+    "inherits": ["Literal"]
+  },
+
+  "BooleanLiteral": {
+    "inherits": ["Literal"]
+  },
+
+  "NullLiteral": {
+    "inherits": ["Literal"]
+  },
+
+  "RegExpLiteral": {
+    "inherits": ["Literal"]
+  },
+
+  "ObjectProperty": {
+    "inherits": ["Property"]
+  },
+
+  "ObjectMethod": {
+    "inherits": ["Property"]
+  },
+
+  "JSXIdentifier": {
+    "inherits": ["Identifier"]
+  },
+
+  "JSXMemberExpression": {
+    "inherits": ["Expression"]
+  },
+
+  "JSXNamespacedName": {
+    "inherits": ["Expression"]
+  },
+
+  "JSXEmptyExpression": {
+    "inherits": ["Node"]
+  },
+
+  "JSXExpressionContainer": {
+    "inherits": ["Node"]
+  },
+
+  "JSXSpreadChild": {
+    "inherits": ["Node"]
+  },
+
+  "JSXBoundaryElement": {
+    "inherits": ["Node"]
+  },
+
+  "JSXOpeningElement": {
+    "inherits": ["JSXBoundaryElement"]
+  },
+
+  "JSXClosingElement": {
+    "inherits": ["JSXBoundaryElement"]
+  },
+
+  "JSXAttribute": {
+    "inherits": ["Node"]
+  },
+
+  "SpreadElement": {
+    "inherits": ["Node"]
+  },
+
+  "JSXSpreadAttribute": {
+    "inherits": ["SpreadElement"]
+  },
+
+  "JSXElement": {
+    "inherits": ["Expression"]
+  },
+
+  "JSXText": {
+    "inherits": ["Node"]
+  },
+
+  "ClassMethod": {
+    "inherits": ["MethodDefinition"]
   }
 
 }
