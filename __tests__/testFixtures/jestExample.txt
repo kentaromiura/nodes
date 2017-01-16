@@ -1,0 +1,24 @@
+'use strict';
+
+jest.disableAutomock();
+jest.mock('Relay', () => require('RelayShallowMock'));
+jest.mock('Platform', () => ({ OS: 'ios', select: o => o.ios }));
+
+import React from 'react';
+const renderer = require('ReactTestRenderer');
+const FakeRelayContainer = require('FakeRelayContainer');
+const FakeRelayReactClass = FakeRelayContainer.unwrap();
+
+test('something very important to test', () => {
+  const propertyToPass = {
+    count: 0,
+    edges: null,
+  };
+  const tree = renderer.create(
+    <FakeRelayReactClass
+      propertyToPass={propertyToPass}
+      aNullProperty={null}
+    />
+  ).toJSON();
+  expect(tree).toMatchSnapshot();
+});

@@ -12,5 +12,12 @@
   "license": "MIT",
   "dependencies": {
     "slick": "~1.12.2"
+  },
+  "devDependencies": {
+    "babylon": "^6.15.0",
+    "jest": "^18.1.0"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/jest"
   }
 }

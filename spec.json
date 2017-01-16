@@ -2,6 +2,16 @@
 
   "Node": {},
 
+  "File": {
+    "inherits": [ "Node" ],
+    "keys": {
+      "program": {
+        "kind": "node",
+        "accepts": [ "Program" ]
+      }
+    }
+  },
+
   "Program": {
     "inherits": [ "Node" ],
     "keys": {
